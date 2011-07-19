@@ -1,0 +1,9 @@
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\bin\Debug\photobox_alpha.exe
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\bin\Debug\photobox_alpha.pdb
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.Properties.Resources.resources
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.exe
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.pdb
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.Form1.resources
