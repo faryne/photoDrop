@@ -7,3 +7,4 @@ C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug
 C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.exe
 C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.pdb
 C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\obj\x86\Debug\photobox_alpha.Form1.resources
+C:\Users\Faryne\Documents\My Dropbox\photobox_alpha\photobox_alpha\bin\Debug\photobox_alpha.exe.config

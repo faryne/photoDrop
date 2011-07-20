@@ -21,8 +21,7 @@ namespace photobox_alpha
 
     private void Form1_Load(object sender, EventArgs e)
     {
-      string s = MD5Encoder.encodeString("Hello World");
-      MessageBox.Show(s);
+
     }
   }
 }

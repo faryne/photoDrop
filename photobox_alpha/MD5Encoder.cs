@@ -8,6 +8,7 @@ using System.IO;
 
 namespace photobox_alpha
 {
+  // 負責計算出MD5值的類別
   class MD5Encoder
   {
     public static string encodeString (string s) 
