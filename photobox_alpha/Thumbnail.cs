@@ -28,7 +28,35 @@ namespace photobox_alpha
 
     public void create()
     {
+      //FileInfo info = 
+      Image img = Image.FromFile(@"C:\Users\Faryne\Downloads\moe 165261 fllay kousaka_kirino ore_no_imouto_ga_konnani_kawaii_wake_ga_nai pantsu thighhighs.jpg");
+      ImageFormat imgformat = img.RawFormat;
+      int fixWidth = 0, fixHeight = 0, maxPix = Convert.ToInt16(500);
 
+      if (img.Width > maxPix || img.Height > maxPix)
+      {
+        if (img.Width > img.Height)
+        {
+          fixWidth = maxPix;
+          fixHeight = Convert.ToInt32((Convert.ToDouble(fixWidth) / Convert.ToDouble(img.Width)) * Convert.ToDouble(img.Height));
+        }
+        else
+        {
+          fixHeight = maxPix;
+          fixWidth = Convert.ToInt32((Convert.ToDouble(fixHeight) / Convert.ToDouble(img.Height)) * Convert.ToDouble(img.Width));
+        }
+      }
+      else
+      {
+        fixHeight = img.Height;
+        fixWidth  = img.Width;
+      }
+
+      Bitmap output = new Bitmap(img, fixWidth, fixHeight);
+      string filename = @"C:\Users\Faryne\Downloads\test_thumbnail.jpg";
+      output.Save(filename, imgformat);
+      output.Dispose();
+      img.Dispose();
     }
 
   }

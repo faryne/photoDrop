@@ -9,14 +9,13 @@ namespace photobox_alpha
 {
   // 負責監視指定目錄的類別
   class FileWatcher
-  {
-    private FileSystemWatcher fw1 = new FileSystemWatcher();
-    private FileSystemWatcher fw2 = new FileSystemWatcher();
-    private FileSystemWatcher fw3 = new FileSystemWatcher();
-    private static bool _isUpdated     = false;
-    
+  {    
     public void setWatcher (string dirPath)
     {
+      FileSystemWatcher fw1 = new FileSystemWatcher();
+      FileSystemWatcher fw2 = new FileSystemWatcher();
+      FileSystemWatcher fw3 = new FileSystemWatcher();
+
       fw1.Changed += new FileSystemEventHandler(_file_watcher_Changed);
       fw1.Deleted += new FileSystemEventHandler(_file_watcher_Deleted);
       fw1.Created += new FileSystemEventHandler(_file_watcher_Created);
@@ -34,6 +33,11 @@ namespace photobox_alpha
       fw3.Created += new FileSystemEventHandler(_file_watcher_Created);
       fw3.Renamed += new RenamedEventHandler(_file_watcher_Renamed);
       fw3.Filter = "*.gif";
+
+      // 開始監視
+      fw1.EnableRaisingEvents = true;
+      fw2.EnableRaisingEvents = true;
+      fw3.EnableRaisingEvents = true;
     }
 
     private void _file_watcher_Renamed(object sender, RenamedEventArgs e)
@@ -56,14 +60,6 @@ namespace photobox_alpha
       throw new NotImplementedException();
     }
 
-
-    // 開始監視
-    public void startMonitor()
-    {
-      fw1.EnableRaisingEvents = true;
-      fw2.EnableRaisingEvents = true;
-      fw3.EnableRaisingEvents = true;
-    }
     
     // （靜態方法）第一次使用時，要將所有檔案與目錄掃進資料庫。
     public static bool firstIndex (string rootPathName) {
