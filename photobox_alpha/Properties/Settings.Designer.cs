@@ -7,7 +7,7 @@
 //     變更將會遺失。
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System.Configuration;
+
 namespace photobox_alpha.Properties {
     
     
@@ -23,19 +23,36 @@ namespace photobox_alpha.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string WatchDirectory {
             get {
-              try
-              {
                 return ((string)(this["WatchDirectory"]));
-              }
-              catch (ConfigurationErrorsException e)
-              {
-                return string.Empty;
-              }
+            }
+            set {
+                this["WatchDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MainPage {
+            get {
+                return ((string)(this["MainPage"]));
+            }
+            set {
+                this["MainPage"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://ha2.tw/photo_drop/")]
+        public string MainSiteUrl {
+            get {
+                return ((string)(this["MainSiteUrl"]));
             }
         }
     }

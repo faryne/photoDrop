@@ -2,8 +2,14 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="photobox_alpha.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="WatchDirectory" Type="System.String" Scope="Application">
+    <Setting Name="WatchDirectory" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MainPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MainSiteUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://ha2.tw/photo_drop/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

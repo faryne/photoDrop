@@ -12,6 +12,10 @@ namespace photobox_alpha
   {    
     public void setWatcher (string dirPath)
     {
+      if (dirPath == "" || !Directory.Exists(dirPath))
+      {
+        throw new Exception("無法啟動檔案監視器，可能是目錄有誤或是不存在，請重新設定監視目錄！");
+      }
       FileSystemWatcher fw1 = new FileSystemWatcher();
       FileSystemWatcher fw2 = new FileSystemWatcher();
       FileSystemWatcher fw3 = new FileSystemWatcher();
